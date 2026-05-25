@@ -375,17 +375,18 @@ export default function ServicePageTemplate({ config }: { config: ServiceConfig 
                   {config.eventType === 'wedding' && (
                     <div>
                       <label className="block text-[10px] font-bold mb-2 tracking-widest uppercase text-gold/90" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                        1. Wedding Backdrop Style
+                        1. Wedding Ceremony Type
                       </label>
                       <select
                         value={weddingType}
                         onChange={(e) => setWeddingType(e.target.value)}
                         className="w-full px-3.5 py-3 rounded-xl text-xs bg-black/40 outline-none border border-white/10 text-white focus:border-gold/50"
                       >
-                        <option value="Royal">Royal Theme (Grand imported floral layout)</option>
-                        <option value="Luxury">Luxury Theme (Modern high-end accents)</option>
-                        <option value="Eastern">Eastern Theme (Traditional elegant culture styling)</option>
-                        <option value="Western">Western Theme (Clean minimal aesthetic)</option>
+                        <option value="Mehndi">Mehndi Night (Traditional henna ceremony)</option>
+                        <option value="Barat">Barat (Wedding day - Grand bride reception)</option>
+                        <option value="Walima">Walima (Wedding reception - Host celebration)</option>
+                        <option value="Engagement">Engagement (Ring ceremony &amp; family gathering)</option>
+                        <option value="Royal">Full Package (Mehndi + Barat + Walima)</option>
                       </select>
                     </div>
                   )}

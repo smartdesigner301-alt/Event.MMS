@@ -53,7 +53,7 @@ export default function PremiumSlider() {
   };
 
   return (
-    <section className="relative py-4 overflow-hidden">
+    <section className="relative overflow-hidden" style={{ marginTop: 0, paddingTop: 0 }}>
       <div className="relative h-[500px] md:h-[600px] lg:h-[700px]">
         <AnimatePresence mode="wait">
           <motion.div
@@ -68,7 +68,7 @@ export default function PremiumSlider() {
               className="absolute inset-0 bg-cover bg-center transition-transform duration-[6000ms] ease-out"
               style={{ backgroundImage: `url(${slides[current].image})`, transform: 'scale(1.05)' }}
             />
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(10,10,10,0.7), rgba(10,10,10,0.4), rgba(10,10,10,0.8))' }} />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(10,10,10,0.25), rgba(10,10,10,0.1), rgba(10,10,10,0.35))' }} />
           </motion.div>
         </AnimatePresence>
 
